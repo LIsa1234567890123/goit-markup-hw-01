@@ -13,28 +13,34 @@ body {
   background-color: #ffffff;
 }
 
-/* ====== Стили для навигации ====== */
-header {
+/* ====== HEADER ====== */
+.header {
   padding: 20px 0;
   border-bottom: 1px solid #e7e9fc;
 }
 
-nav {
+.header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .logo {
-  font-size: 24px;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
   text-decoration: none;
+}
+
+.logo-accent {
   color: #2e2f42;
 }
 
+/* ====== Навигация ====== */
 .nav-list {
   display: flex;
   list-style: none;
@@ -44,6 +50,9 @@ nav {
 .nav-link {
   text-decoration: none;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #2e2f42;
   transition: color 250ms ease-in-out;
 }
@@ -53,7 +62,11 @@ nav {
   color: #404bbf;
 }
 
-/* ====== Контактные ссылки ====== */
+/* ====== Контакты ====== */
+.contact {
+  font-style: normal;
+}
+
 .contact-list {
   display: flex;
   gap: 20px;
@@ -63,6 +76,9 @@ nav {
 .contact-link {
   text-decoration: none;
   color: #434455;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   transition: color 250ms ease-in-out;
 }
 
@@ -80,9 +96,12 @@ nav {
 }
 
 .hero-title {
-  font-size: 36px;
+  font-size: 56px;
   font-weight: 700;
-  margin-bottom: 20px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
 
 .hero-button {
@@ -90,81 +109,15 @@ nav {
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
-  background-color: #404bbf;
+  background-color: #4d5ae5;
   border: none;
   cursor: pointer;
   transition: background-color 250ms ease-in-out;
 }
 
-.hero-button:hover {
-  background-color: #2a2f9f;
-}
-
-/* ====== КОМПАНИЯ (Values) ====== */
-.company {
-  padding: 50px 0;
-  text-align: center;
-}
-
-.company-list {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-}
-
-.company-item {
-  width: 250px;
-}
-
-.company-title {
-  font-size: 24px;
-  font-weight: 700;
-  color: #2e2f42;
-  margin-bottom: 10px;
-}
-
-.company-text {
-  font-size: 16px;
-  color: #434455;
-}
-
-/* ====== КОМАНДА (Our Team) ====== */
-.team {
-  padding: 50px 0;
-  text-align: center;
-  background-color: #f4f4fd;
-}
-
-.team-title {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.team-list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  list-style: none;
-}
-
-.team-item {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.team-name {
-  font-size: 20px;
-  font-weight: 700;
-  color: #2e2f42;
-  margin-top: 10px;
-}
-
-.team-role {
-  font-size: 16px;
-  color: #434455;
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
 }
 
 /* ====== FOOTER ====== */
@@ -176,13 +129,22 @@ nav {
 }
 
 .footer-logo {
-  font-size: 24px;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
   text-decoration: none;
-  color: #ffffff;
+}
+
+.footer-logo-accent {
+  color: #f4f4fd;
 }
 
 .footer-text {
   font-size: 16px;
-  margin-top: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
