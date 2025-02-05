@@ -1,0 +1,188 @@
+/* ====== Общие стили ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
+  background-color: #ffffff;
+}
+
+/* ====== Стили для навигации ====== */
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #2e2f42;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #2e2f42;
+  transition: color 250ms ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+
+/* ====== Контактные ссылки ====== */
+.contact-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #434455;
+  transition: color 250ms ease-in-out;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
+}
+
+/* ====== HERO ====== */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #2e2f42;
+  color: white;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #404bbf;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms ease-in-out;
+}
+
+.hero-button:hover {
+  background-color: #2a2f9f;
+}
+
+/* ====== КОМПАНИЯ (Values) ====== */
+.company {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.company-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.company-item {
+  width: 250px;
+}
+
+.company-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2e2f42;
+  margin-bottom: 10px;
+}
+
+.company-text {
+  font-size: 16px;
+  color: #434455;
+}
+
+/* ====== КОМАНДА (Our Team) ====== */
+.team {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f4f4fd;
+}
+
+.team-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.team-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2e2f42;
+  margin-top: 10px;
+}
+
+.team-role {
+  font-size: 16px;
+  color: #434455;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  background-color: #2e2f42;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-text {
+  font-size: 16px;
+  margin-top: 10px;
+}
