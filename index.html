@@ -5,69 +5,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-markup-hw-01</title>
 
-    <!-- Подключение Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+
+   
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Подключение нормализатора стилей -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    />
-
-    <!-- Подключение основного файла стилей -->
+    
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="header-nav">
-        <a href="/" class="logo">
-          Web<span class="logo-accent">Studio</span>
-        </a>
-        <ul class="nav-list">
-          <li>
-            <a href="./index.html" class="nav-link">Studio</a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">Portfolio</a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">Contacts</a>
-          </li>
+    <header>
+      <nav>
+        <a href="/">WebStudio</a>
+        <ul>
+          <li><a href="">Studio</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Contacts</a></li>
         </ul>
       </nav>
-      <address class="contact">
-        <ul class="contact-list">
+      <address>
+        <ul>
           <li>
-            <a href="mailto:info@devstudio.com" class="contact-link"
-              >info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li>
-            <a href="tel:+110001111111" class="contact-link"
-              >+11 (000) 111-11-11</a
-            >
+            <a href="tel:+110001111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
       </address>
     </header>
 
     <main>
-      <section class="hero">
-        <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button type="button" class="hero-button">Order Service</button>
+      <section>
+        <h1>Effective Solutions for Your Business</h1>
+        <button type="button" class="button">Order Service</button>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">Hidden</h2>
+        <ul>
+          <li>
+            <h3>Strategy</h3>
+            <p>
+              Our goal is to identify the business problem to walk away with the
+              perfect and creative solution.
+            </p>
+          </li>
+          <li>
+            <h3>Punctuality</h3>
+            <p>
+              Bring the key message to the brand's audience for the best price
+              within the shortest possible time.
+            </p>
+          </li>
+          <li>
+            <h3>Diligence</h3>
+            <p>
+              Research and confirm brands with the strongest digital growth
+              opportunities and minimize risk.
+            </p>
+          </li>
+          <li>
+            <h3>Technologies</h3>
+            <p>
+              Design practice focused on digital experiences. We bring forth a
+              deep passion for problem-solving.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Our Team</h2>
+        <ul>
+          <li>
+            <img
+              src="./images/worker-01.jpg"
+              alt="photo Mark Guerrero"
+              width="264"
+            />
+            <h3>Mark Guerrero</h3>
+            <p>Product Designer</p>
+          </li>
+          <li>
+            <img src="./images/worker-02.jpg" alt="photo Tom Ford" width="264" />
+            <h3>Tom Ford</h3>
+            <p>Frontend Developer</p>
+          </li>
+          <li>
+            <img
+              src="./images/worker-03.jpg"
+              alt="photo Camila Garcia"
+              width="264"
+            />
+            <h3>Camila Garcia</h3>
+            <p>Marketing</p>
+          </li>
+          <li>
+            <img
+              src="./images/worker-04.jpg"
+              alt="photo Daniel Wilson"
+              width="264"
+            />
+            <h3>Daniel Wilson</h3>
+            <p>UI Designer</p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Our Portfolio</h2>
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <a class="gallery__link"
+              ><img
+                class="gallery__image"
+                src="./images/portfolio-01.jpg"
+                alt="Banking App Interface Concept"
+                width="360"
+              />
+              <h2 class="gallery__title">Banking App Interface Concept</h2>
+              <p class="gallery__text">App</p></a
+            >
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link">
+              <img
+                class="gallery__image"
+                src="./images/portfolio-02.jpg"
+                alt="Cashless Payment"
+                width="360"
+              />
+              <h2 class="gallery__title">Cashless Payment</h2>
+              <p class="gallery__text">Marketing</p></a
+            >
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link"
+              ><img
+                class="gallery__image"
+                src="./images/portfolio-03.jpg"
+                alt="Meditation App"
+                width="360"
+              />
+              <h2 class="gallery__title">Meditation App</h2>
+              <p class="gallery__text">App</p></a
+            >
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link"
+              ><img
+                class="gallery__image"
+                src="./images/portfolio-04.jpg"
+                alt="Taxi Service"
+                width="360"
+              />
+              <h2 class="gallery__title">Taxi Service</h2>
+              <p class="gallery__text">Marketing</p></a
+            >
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link"
+              ><img
+                class="gallery__image"
+                src="./images/portfolio-05.jpg"
+                alt="Screen Illustrations"
+                width="360"
+              />
+              <h2 class="gallery__title">Screen Illustrations</h2>
+              <p class="gallery__text">Design</p></a
+            >
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link">
+              <img
+                class="gallery__image"
+                src="./images/portfolio-06.jpg"
+                alt="Online Courses"
+                width="360"
+              />
+              <h2 class="gallery__title">Online Courses</h2>
+              <p class="gallery__text">Marketing</p>
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
 
-    <footer class="footer">
-      <a href="/" class="footer-logo">
-        Web<span class="footer-logo-accent">Studio</span>
-      </a>
-      <p class="footer-text">
+    <footer>
+      <a href="/">WebStudio</a>
+      <p>
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
